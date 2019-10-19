@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TensorTesting</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+    <script src='scripts.js'></script>
+</head>
+
+<body>
+
+    <div class="half-left">
+        <input class="p-1" type='file' />
+
+        <div class="wrapper">
+            <br><img class="p-2" id="myImg" src="#">
+        </div>
+    </div>
+    <div class="half-right">
+        <div id="spinner">
+            <div id="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="module">
+            <h3 id="hookolme">upload picture</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
